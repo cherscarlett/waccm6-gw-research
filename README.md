@@ -38,10 +38,10 @@ python plots_from_csv.py --annual-dir . --era5-dir . --five-day-dir . --out figu
 
   `Walker = mean(OMEGA_500, east) - mean(OMEGA_500, west)`
 
-  The western region is **5°S–5°N, 120°–160°E**, and the eastern region is **5°S–5°N, 240°–280°E**. Values are in `hPa day^-1`. Under the pressure-velocity convention, negative `OMEGA` indicates ascent and positive `OMEGA` indicates descent. This is a **regional vertical-motion contrast**, not a direct measurement of the entire Walker mass circulation.
+  The western region is 5°S–5°N, 120°–160°E, and the eastern region is 5°S–5°N, 240°–280°E. Values are in `hPa day^-1`. Under the pressure-velocity convention, negative `OMEGA` indicates ascent and positive `OMEGA` indicates descent. This is a regional vertical-motion contrast.
 - **Precipitation:** model total precipitation is calculated as `PRECC + PRECL` where `PRECT` is not stored separately; reported in `mm day^-1`.
 - **850-hPa winds:** `u850_trade_m_s`, zonal wind in `m s^-1`. Positive anomalies indicate an eastward shift relative to control.
-- **Anomalies:** columns prefixed `delta_`, or named `delta_vs_ctrl`, mean **experiment minus the matching control**. Coordinates in the gridded CSVs are given by `lat`, `lon` (degrees east), and `lev` (nominal pressure, hPa), as applicable.
+- **Anomalies:** columns prefixed `delta_`, or named `delta_vs_ctrl`, mean experiment minus the matching control. Coordinates in the gridded CSVs are given by `lat`, `lon` (degrees east), and `lev` (nominal pressure, hPa), as applicable.
 - **Annual aggregation:** the model's monthly means are combined using model-month durations. The 1991–2020 ERA5 annual values were formed from monthly data with calendar-month-duration weighting.
 
 ## Citation and archiving
